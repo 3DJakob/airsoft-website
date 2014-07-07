@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>chat</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+
+  <div class="header">
+    <div class="bar">
+      <a>Welcome</a>
+      <a>Chat</a>
+    </div>
+  </div>
+
+  <main class="page-chat">
+
+    <div class="chat">
+      <ul id="messages"> </ul>
+      <form action="">
+        <input id="m" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </div>
+
+  </main>
+
+
+  <script src="/socket.io/socket.io.js"> </script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"> </script>
+  <script>
+
+    var socket = io();
+
+    $('form').submit(function(){
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+
+    socket.on('chat message', function(msg){
+      $('#messages').append($('<li>').text(msg));
+    });
+
+    //$("ul").attr("scrollBottom",200);
+
+  </script>
+
+</body>
+</html>

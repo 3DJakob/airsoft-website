@@ -1,0 +1,61 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 10pt;
+  background-color: lightgrey;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  background-color: white;
+}
+
+div.header {
+  padding-top: 300px;
+  height: 50px;
+  background-image: url('/header.jpg');
+  background-color: black;
+  background-size: auto 300px;
+  background-position: center top;
+  background-repeat: repeat-x;
+}
+
+div.bar {
+  height: 50px;
+  width: 960px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.bar a {
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 12pt;
+  background-color: black;
+  border-left: 2px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: darkgrey;
+  float: left;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.bar a:hover {
+  color: lightgrey;
+}

@@ -1,0 +1,64 @@
+
+.page-chat {
+  position: absolute;
+  top: 350px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  border: none;
+}
+
+.page-chat .chat {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  width: 960px;
+  background: white;
+}
+
+.page-chat form {
+  height: 40px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.page-chat form input {
+  border: 0;
+  padding: 10px;
+  width: 850px;
+  float: left;
+}
+
+.page-chat form button {
+  width: 82px;
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px;
+  float: left;
+}
+
+.page-chat #messages {
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-chat #messages li {
+  padding: 5px 10px;
+}
+
+.page-chat #messages li:nth-child(odd) {
+  background: #eee;
+}
