@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   font-size: 10pt;
@@ -54,6 +58,7 @@ div.bar {
   float: left;
   cursor: pointer;
   cursor: hand;
+  text-decoration: none;
 }
 
 .bar a:hover {

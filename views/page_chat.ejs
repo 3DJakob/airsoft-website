@@ -1,0 +1,44 @@
+
+<% include layout_head.ejs %>
+
+<main class="page-chat">
+
+  <div class="chat">
+    <ul id="messages"> </ul>
+    <form action="">
+      <input id="m" autocomplete="off" placeholder="Message:" />
+      <button>Send</button>
+    </form>
+  </div>
+
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+
+  var socket = io();
+  var $msg = $('#messages');
+
+  $('form').submit(function(){
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+  });
+
+  socket.on('chat log', function(messages){
+    messages.forEach(function (msg) {
+      $msg.append($('<li>').text(msg));
+    });
+    $msg.scrollTop($msg.prop('scrollHeight'));
+  });
+
+  socket.on('chat message', function(msg){
+    $msg.append($('<li>').text(msg));
+    $msg.scrollTop($msg.prop('scrollHeight'));
+  });
+
+
+</script>
+
+<% include layout_foot.ejs %>
