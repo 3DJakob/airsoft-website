@@ -1,0 +1,56 @@
+
+.page-spelare img {
+  height: 250px;
+  width: 250px;
+  margin-left: 20px;
+  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
+  margin-top: 20px;
+}
+
+.page-spelare div.answers {
+  height: 250px;
+  width: 680px;
+  /*background-color: grey;*/
+  float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.page-spelare div.answers div {
+  height: 250px;
+  width: 120px;
+}
+
+.page-spelare div.answers table {
+  height: 250px;
+  width: 200px;
+  float: left;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.page-spelare div.answers td {
+  font-size: 18pt;
+  line-height: 60px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  text-align: right;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+
+.page-spelare div.answers table.answer td {
+  text-align: left;
+}
+
+.page-spelare div.answers div {
+  height: 248px;
+  width: 1px;
+  float: left;
+  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.5);
+
+  background-color: black;
+  left: 400px;
+  top: 75px;
+}

@@ -40,6 +40,10 @@ app.get('/chat', function (req, res) {
   res.render('page_chat.ejs');
 });
 
+app.get('/spelare', function (req, res) {
+  res.render('page_spelare.ejs');
+});
+
 server.listen(3000, function () {
   console.log('http://localhost:3000');
 });
