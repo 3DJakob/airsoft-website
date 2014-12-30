@@ -1,0 +1,35 @@
+
+<% include layout_head.ejs %>
+
+<main class="page-chat">
+
+  <% include part_attendance.ejs %>
+
+  <div class="namebox">
+    <form action="">
+      <h1 class="white">Your name<h1>
+      <input id="name" placeholder="Your name:" />
+      <button>OK</button>
+    </form>
+  </div>
+
+  <div class="chat" style="display: none;">
+    <div id="messages">
+      <table></table>
+    </div>
+    <form action="">
+      <input id="m" autocomplete="off" placeholder="Message:" />
+      <button>Send</button>
+    </form>
+  </div>
+
+</main>
+
+<% include layout_js.ejs %>
+
+<script type="text/javascript">
+airsoft.initChat();
+airsoft.initAttendance();
+</script>
+
+<% include layout_foot.ejs %>
