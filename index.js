@@ -16,8 +16,6 @@ var messages = [];
 
 io.on('connection', function (socket) {
 
-  console.log('a user connected');
-
   socket.emit('chat log', messages);
 
   socket.on('chat message', function (msg) {
@@ -25,9 +23,6 @@ io.on('connection', function (socket) {
     messages.push(msg);
   });
 
-  socket.on('disconnect', function () {
-    console.log('a user disconnected');
-  });
 
 });
 
