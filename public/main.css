@@ -14,53 +14,49 @@ body {
   background-color: lightgrey;
 }
 
-main {
-  width: 960px;
-  margin: 0 auto;
-  border-style: solid;
-  border-color: black;
-  border-radius: 0 0 3px 3px;
-  border-top: 0;
-  background-color: white;
-}
-
-div.header {
-  padding-top: 300px;
-  height: 50px;
+header {
+  height: 300px;
   background-image: url('/header.jpg');
-  background-color: black;
   background-size: auto 300px;
   background-position: center top;
   background-repeat: repeat-x;
 }
 
-div.bar {
+nav {
   height: 50px;
+  background-image: -webkit-linear-gradient(90deg,#19441B,#007A4F);
+  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
+}
+
+nav>div {
   width: 960px;
-  background-color: black;
   margin: 0 auto;
 }
 
-.bar a {
+main {
+  width: 960px;
+  margin: 0 auto;
+  border-radius: 0 0 3px 3px;
+  background-color: white;
+  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
+}
+
+nav a {
+  float: left;
   height: 50px;
   width: 100px;
   line-height: 50px;
   text-align: center;
   color: white;
   font-size: 12pt;
-  background-color: black;
-  border-left: 2px;
-  border-right: 0px;
-  border-top: 0px;
-  border-bottom: 0px;
-  border-style: solid;
-  border-color: darkgrey;
-  float: left;
-  cursor: pointer;
-  cursor: hand;
+  border: 0 solid white;
+  border-left-width: 1px;
   text-decoration: none;
+  transition-duration: 220ms;
 }
 
-.bar a:hover {
+nav a:hover {
   color: lightgrey;
+  /*background-image: -webkit-linear-gradient(90deg,#123315,#006640);*/
+  background-color: #123315;
 }
