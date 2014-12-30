@@ -36,6 +36,7 @@ nav>div {
 main {
   width: 960px;
   margin: 0 auto;
+  position: relative;
   border-radius: 0 0 3px 3px;
   background-color: white;
   box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
@@ -44,7 +45,7 @@ main {
 nav a {
   float: left;
   height: 50px;
-  width: 100px;
+  width: 117px;
   line-height: 50px;
   text-align: center;
   color: white;
@@ -59,4 +60,38 @@ nav a:hover {
   color: lightgrey;
   /*background-image: -webkit-linear-gradient(90deg,#123315,#006640);*/
   background-color: #123315;
+}
+
+h1.white {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+aside {
+  position: absolute;
+  overflow: hidden;
+  left: -210px;
+  top: 10px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
+}
+
+aside h1 {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  background-image: -webkit-linear-gradient(90deg,#19441B,#007A4F);
+}
+
+aside ul {
+  font-size: 12pt;
+  padding-left: 1em;
+  list-style-type: none;
+}
+
+aside input {
+  vertical-align: 1px;
 }

@@ -13,16 +13,22 @@ app.engine('ejs', ejs.renderFile);
 app.use(express.static('public'));
 
 var messages = [];
+var attendance = { jakob: true };
 
 io.on('connection', function (socket) {
 
   socket.emit('chat log', messages);
+  socket.emit('attendance log', attendance);
 
   socket.on('chat message', function (msg) {
     io.emit('chat message', msg);
     messages.push(msg);
   });
 
+  socket.on('attendance update', function (msg) {
+    io.emit('attendance update', msg);
+    attendance[msg.name] = msg.attendance;
+  });
 
 });
 

@@ -78,12 +78,6 @@
   background: #eee;
 }
 
-.page-chat h1 {
-  text-align: center;
-  color: white;
-  text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-}
-
 .page-chat .namebox {
   height: 100px;
   width: 200px;
@@ -96,12 +90,12 @@
   box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
 }
 
-.page-chat .nameform {
+.page-chat .namebox form {
   height: 50px;
   width: 200;
 }
 
-.page-chat .nameinput {
+.page-chat .namebox input {
   height: 10px;
   width: 129px;
   float: left;
@@ -112,7 +106,7 @@
   padding: 10px;
 }
 
-.page-chat .namebotton {
+.page-chat .namebox button {
   height: 31px;
   width: 50px;
   background-color: lightblue;

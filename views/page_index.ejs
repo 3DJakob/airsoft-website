@@ -3,7 +3,9 @@
 
 <main class="page-index">
 
-  <h1> Welcome! </h1>
+  <% include part_attendance.ejs %>
+
+  <h1 class="start"> Welcome! </h1>
   <p>
     Välkommen till Airsoft hökarnas officiella hemsida!
   </p>
@@ -12,5 +14,11 @@
   </p>
 
 </main>
+
+<% include layout_js.ejs %>
+
+<script type="text/javascript">
+  airsoft.initAttendance();
+</script>
 
 <% include layout_foot.ejs %>
