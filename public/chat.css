@@ -6,8 +6,8 @@
   left: 0;
   right: 0;
   background: none;
-  border: solid;
   border-top: 0px;
+  background-color: white;
 }
 
 .page-chat .chat {
@@ -18,7 +18,7 @@
   background: white;
 }
 
-.page-chat form {
+.page-chat .chat form {
   height: 40px;
   background: white;
   position: absolute;
@@ -26,26 +26,26 @@
   left: 0;
   right: 0;
   margin: auto;
-  border-top: 3px solid black;
+  border-top: 1px solid black;
   width:
 }
 
-.page-chat form input {
+.page-chat .chat form input {
   border: 0;
   padding: 10px;
   width: 850px;
   float: left;
 }
 
-.page-chat form button {
+.page-chat .chat form button {
   width: 90px;
   height: 40px;
-  background: rgb(130, 224, 255);
+  background-color: lightblue;
   float: left;
   margin-top: 0px;
   margin-bottom: 0px;
   border: 0;
-  border-left: 3px solid black;
+  border-left: 1px solid black;
 }
 
 .page-chat #messages {
@@ -56,15 +56,67 @@
   right: 0;
   overflow: scroll;
   overflow-x: hidden;
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
-.page-chat #messages li {
+.page-chat #messages table {
+  width: 100%;
+}
+
+.page-chat #messages tr td {
   padding: 5px 10px;
 }
 
-.page-chat #messages li:nth-child(odd) {
+.page-chat #messages tr td:first-child {
+  width: 96px;
+  font-weight: bold;
+}
+
+.page-chat #messages tr:nth-child(odd) td {
   background: #eee;
+}
+
+.page-chat h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+.page-chat .namebox {
+  height: 100px;
+  width: 200px;
+  background-image: -webkit-linear-gradient(90deg,#19441B,#007A4F);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 92px;
+  border: solid 1px black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
+}
+
+.page-chat .nameform {
+  height: 50px;
+  width: 200;
+}
+
+.page-chat .nameinput {
+  height: 10px;
+  width: 129px;
+  float: left;
+  background-color: lightgrey;
+  border: none;
+  border-right: solid 1px black;
+  border-top: solid 1px black;
+  padding: 10px;
+}
+
+.page-chat .namebotton {
+  height: 31px;
+  width: 50px;
+  background-color: lightblue;
+  float: right;
+  border: none;
+  border-top: solid 1px black;
 }
