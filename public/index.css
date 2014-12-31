@@ -3,24 +3,81 @@ p {
   padding: 10px
 }
 
+div.reset {
+  height: 30px;
+  width: 70px;
+  background-color: blue;
+  border-radius: 10px;
+  position: absolute;
+  left: 100px;
+}
+
+div.reset a {
+  line-height: 30px;
+}
+
+div.holder {
+  width: 960px;
+  height: 350px;
+  padding-bottom: 80px;
+}
+
 div.slider {
   width: 800px;
   height: 350px;
   overflow: hidden;
-  margin: 30px auto;
+  margin: 30px 80px;
+  position: absolute;
+  box-shadow: 1px 1px 40px 0px rgba(50, 50, 50, 0.2);
 }
 
 div.slider div {
-  width: 1600px;
+  width: 4000px;
   height: 350px;
   margin: 0;
   padding: 0;
+  position: absolute;
+  -webkit-animation: slide 15000ms infinite ease-out;
+  -webkit-animation-fill-mode: both;
+  animation: infinite;
 }
+
+@-webkit-keyframes slide {
+  0% {
+    left: 0px;
+  }
+  13% {
+    left: 0px;
+  }
+  25% {
+    left: -800px;
+  }
+  38% {
+    left: -800px;
+  }
+  50% {
+    left: -1600px;
+  }
+  63% {
+    left: -1600px;
+  }
+  75% {
+    left: -2400px;
+  }
+  88% {
+    left: -2400px;
+  }
+  100% {
+    left: -3200px;
+  }
+
+}
+
 
 div.slider img {
   border: 0;
   width: 800px;
   height: 350px;
-  float: right;
+  float: left;
   /*display: none;*/
 }
