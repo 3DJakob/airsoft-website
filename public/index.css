@@ -2,3 +2,25 @@
 p {
   padding: 10px
 }
+
+div.slider {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+div.slider div {
+  width: 1600px;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+div.slider img {
+  border: 0;
+  width: 800px;
+  height: 350px;
+  float: right;
+  /*display: none;*/
+}
