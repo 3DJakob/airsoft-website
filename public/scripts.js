@@ -63,12 +63,17 @@
 
   function initSlider() {
 
+    var dots = [];
     var current = 0;
     var width = $('.slider').width();
     var count = $('.slider .images img').length;
 
     $('.slider .images').css('width', width * count);
     $('.slider .images img').css('width', width);
+
+    function updateCSS() {
+      $('.slider .images').css('left', -(current * width));
+    }
 
     function setSlide(n) {
 
@@ -81,10 +86,6 @@
       updateCSS();
     }
 
-    function updateCSS() {
-      $('.slider .images').css('left', -(current * width));
-    }
-
     function prevSlide() {
       setSlide((current + count - 1) % count);
     }
@@ -93,9 +94,7 @@
       setSlide((current + 1) % count);
     }
 
-    var dots = [];
-
-    for (var i=0; i<count; i++) {
+    for (var i = 0; i < count; i++) {
       var dot = $('<div />');
       dots.push(dot);
       $('.slider .dots').append(dot);

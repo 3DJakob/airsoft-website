@@ -1,6 +1,7 @@
 
 var ejs = require('ejs');
 var http = require('http');
+var path = require('path');
 var express = require('express');
 var socketio = require('socket.io');
 
@@ -8,7 +9,7 @@ var app = express();
 var server = http.createServer(app);
 var io = socketio(server);
 
-app.set('views', __dirname + '/views');
+app.set('views', path.join(__dirname, 'views'));
 app.engine('ejs', ejs.renderFile);
 app.use(express.static('public'));
 
