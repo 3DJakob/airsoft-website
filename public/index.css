@@ -37,7 +37,7 @@ div.slider div {
   margin: 0;
   padding: 0;
   position: absolute;
-  -webkit-animation: slide 15000ms infinite ease-out;
+  -webkit-animation: slide 16000ms infinite ease;
   -webkit-animation-fill-mode: both;
   animation: infinite;
 }
@@ -46,25 +46,25 @@ div.slider div {
   0% {
     left: 0px;
   }
-  13% {
+  20% {
     left: 0px;
   }
   25% {
     left: -800px;
   }
-  38% {
+  45% {
     left: -800px;
   }
   50% {
     left: -1600px;
   }
-  63% {
+  70% {
     left: -1600px;
   }
   75% {
     left: -2400px;
   }
-  88% {
+  95% {
     left: -2400px;
   }
   100% {
