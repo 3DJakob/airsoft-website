@@ -1,3 +1,17 @@
+.page-spelare img.line {
+  height: 200px;
+  width: 250px;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+}
+
+.page-spelare img.line:nth-child(2) {
+  right: 0;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+}
+
 
 .page-spelare img {
   height: 250px;
