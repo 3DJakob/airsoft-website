@@ -1,67 +1,4 @@
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-:focus {
-  outline: none;
-}
-
-body {
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-size: 10pt;
-  background-color: lightgrey;
-}
-
-header {
-  height: 300px;
-  background-image: url('/header.jpg');
-  background-size: auto 300px;
-  background-position: center top;
-  background-repeat: repeat-x;
-}
-
-nav {
-  height: 50px;
-  background-image: -webkit-linear-gradient(90deg,#19441B,#007A4F);
-  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
-}
-
-nav>div {
-  width: 960px;
-  margin: 0 auto;
-}
-
-main {
-  width: 960px;
-  margin: 0 auto;
-  position: relative;
-  border-radius: 0 0 3px 3px;
-  background-color: white;
-  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
-}
-
-nav a {
-  float: left;
-  height: 50px;
-  width: 117px;
-  line-height: 50px;
-  text-align: center;
-  color: white;
-  font-size: 12pt;
-  border: 0 solid white;
-  border-left-width: 1px;
-  text-decoration: none;
-  transition-duration: 220ms;
-}
-
-nav a:hover {
-  color: lightgrey;
-  /*background-image: -webkit-linear-gradient(90deg,#123315,#006640);*/
-  background-color: #123315;
-}
-
 h1.white {
   text-align: center;
   color: white;
@@ -69,38 +6,16 @@ h1.white {
 
 }
 
-h1.start {
-  margin: 20px;
-  text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+h1.oleo {
+  font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+  text-align: center;
+  padding-topp: 48px;
+  margin: 0px;
+}
+
+p.oleo {
+  font: 400 20px/1.3 'Oleo Script', Helvetica, sans-serif;
+  text-align: center;
   margin-top: 0;
-  margin-left: 10px;
-  padding-top: 20px;
-}
-
-aside {
-  position: absolute;
-  overflow: hidden;
-  left: -210px;
-  top: 10px;
-  width: 200px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 1px 1px 19px 0px rgba(50, 50, 50, 0.5);
-}
-
-aside h1 {
-  margin: 0;
-  height: 50px;
-  line-height: 50px;
-  background-image: -webkit-linear-gradient(90deg,#19441B,#007A4F);
-}
-
-aside ul {
-  font-size: 12pt;
-  padding-left: 1em;
-  list-style-type: none;
-}
-
-aside input {
-  vertical-align: 1px;
+  padding-topp: 0;
 }
