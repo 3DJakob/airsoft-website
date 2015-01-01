@@ -61,9 +61,58 @@
 
   }
 
+  function initSlider() {
+
+    var current = 0;
+    var width = $('.slider').width();
+    var count = $('.slider .images img').length;
+
+    $('.slider .images').css('width', width * count);
+    $('.slider .images img').css('width', width);
+
+    function setSlide(n) {
+
+      dots[current].removeClass('active');
+
+      current = n;
+
+      dots[current].addClass('active');
+
+      updateCSS();
+    }
+
+    function updateCSS() {
+      $('.slider .images').css('left', -(current * width));
+    }
+
+    function prevSlide() {
+      setSlide((current + count - 1) % count);
+    }
+
+    function nextSlide() {
+      setSlide((current + 1) % count);
+    }
+
+    var dots = [];
+
+    for (var i=0; i<count; i++) {
+      var dot = $('<div />');
+      dots.push(dot);
+      $('.slider .dots').append(dot);
+    }
+
+    dots[current].addClass('active');
+
+    setInterval(nextSlide, 7000);
+    $('.slider a').eq(0).on('click', prevSlide);
+    $('.slider a').eq(1).on('click', nextSlide);
+
+  }
+
   window.airsoft = {
     initChat: initChat,
-    initAttendance: initAttendance
+    initAttendance: initAttendance,
+    initSlider: initSlider
   };
 
 }());
